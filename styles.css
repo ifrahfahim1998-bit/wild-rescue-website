@@ -1,0 +1,356 @@
+/*  
+Author: Ifrah Fahim
+File Name: styles.css
+Date: 11/05/2026
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Style rules for body and images*/
+
+body {
+  background-color: #f6eee4;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for skip navigation link */
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.skip:focus {
+  color: #fff;
+  background-color: #2a1f14;
+  text-decoration: none;
+  padding: 0.5%;
+  top: auto;
+  left: auto;
+  right: 1px;
+  z-index: 1;
+}
+
+.mobile,
+.mobile-tablet {
+  display: block;
+}
+
+.tab-desk,
+.desktop,
+#nav-links {
+  display: none;
+}
+
+/*Style rules for header area*/
+
+.mobile h1 {
+  margin: 2% 0 0 3%;
+  padding: 2%;
+  text-align: center;
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Style rules for navigation area*/
+
+nav {
+  background-color: #2a1f14;
+}
+
+.mobile-nav a {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  padding: 3%;
+  display: block;
+}
+
+.mobile-nav a.nav-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #f6eee4;
+  padding: 2%;
+}
+
+.nav-icon div {
+  height: 40px;
+  width: 40px;
+  color: #2a1f14;
+}
+/*Style rules for main content*/
+
+main {
+  padding: 2%;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+/*Style rules for class and id selectors*/
+
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact,
+#form h2 {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Style rules for form elements*/
+
+fieldset,
+input,
+textarea {
+  margin-bottom: 2%;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+label {
+  display: block;
+  padding-top: 2%;
+}
+
+form #submit {
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: #78593a;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+
+/*Style rules for FAQ page*/
+
+#questions p {
+  cursor: pointer;
+}
+
+#answer {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#answer h2 {
+  display: none;
+}
+
+/*Style rules for footer content*/
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+.social img {
+  display: inline-block;
+  padding: 4%;
+}
+
+/* Tablet Viewport: Style rule for form element */
+
+@media screen and (min-width: 630px) {
+
+  .mobile,
+  .mobile-nav {
+    display: none;
+  }
+  
+  .tab-desk {
+    display: block;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline-block;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  
+  nav li a {
+    display: block;
+    color: #f6eee4;
+    padding: 0.5em 2em;
+    text-decoration: none;
+  }
+}
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+/* Tablet Viewport: Style rules for footer area */
+
+footer {
+  overflow: auto;
+}
+
+.copyright {
+  float: left;
+  width: 65%;
+}
+
+.social {
+  float: right;
+  width: 25%;
+}
+
+/* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+
+@media screen and (min-width: 1000px) {
+  .desktop {
+    display: block;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+
+  /* Style rules for table */
+
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 1%;
+  }
+
+  th,
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+
+  th {
+    background-color: #2a1f14;
+    color: #fff;
+    font-size: 1.15em;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #deccba;
+  }
+
+  /* Desktop Viewport: Style rules for form elements */
+
+  form {
+    width: auto;
+  }
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .btn {
+    grid-column: 1 / span 2;
+  }
+}
